@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome! Search Videos By Id</h1>
+        <div class="video-container">
+            <div id="player"></div>
+        </div>
+        <div class="input-container">
+            <label for="videoId">Enter ID Of Youtube Video:</label>
+            <input type="text" id="videoId" placeholder="Enter video ID">
+            <button onclick="loadVideo()">Load Video</button>
+        </div>
+        <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+            <div class="container text-center">
+              <small>Copyright &copy; Aruj</small>
+            </div>
+          </footer>
+
+    </div>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+</body>
+</html>
