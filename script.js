@@ -5,7 +5,7 @@ document.head.appendChild(script);
 
 let player;
 
-function Readiness() {
+function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
         height: '360',
         width: '640',
@@ -24,11 +24,11 @@ function Readiness() {
     });
 }
 
-function play(event) {
+function onPlayerReady(event) {
     
 }
 
-function statechange(event) {
+function onPlayerStateChange(event) {
    
 }
 
